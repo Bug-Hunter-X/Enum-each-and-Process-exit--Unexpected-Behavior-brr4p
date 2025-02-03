@@ -1,0 +1,1 @@
+This example highlights a subtle issue in Elixir when using `Enum.each` with `Process.exit`. When `Process.exit` is called within the enumeration function, the `Enum.each` does not cleanly handle the termination, leading to unexpected behavior or error messages. The solution demonstrates how to handle the termination more robustly.
